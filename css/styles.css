@@ -2476,7 +2476,7 @@ textarea.form-control-lg {
      -moz-appearance: none;
           appearance: none;
   -webkit-print-color-adjust: exact;
-          color-adjust: exact;
+          accent-color: exact;
 }
 .form-check-input[type=checkbox] {
   border-radius: 0.25em;
@@ -11577,12 +11577,7 @@ footer.footer .social-link:hover {
     font-weight: bold;
     font-size: 2rem;
 }
-.back_fondo {
 
-}
-.background_img {
-
-}
 
 .header {
   color: #36A0FF;
