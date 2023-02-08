@@ -6,7 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --bs-blue: #226db8;
+  --bs-blue: #0c71c3;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
@@ -36,13 +36,13 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 29, 128, 159;
+  --bs-primary-rgb: 12, 113, 195;
   --bs-secondary-rgb: 236, 184, 7;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 236, 184, 7;
   --bs-danger-rgb: 220, 53, 69;
-  --bs-light-rgb: 248, 249, 250;
+  --bs-light-rgb: 188, 188, 188;
   --bs-dark-rgb: 33, 37, 41;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
@@ -62,7 +62,8 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -234,7 +235,7 @@ a {
   text-decoration: underline;
 }
 a:hover {
-    color: #040404;
+  color: #17667f;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -370,9 +371,9 @@ select:disabled {
 button,
 [type=button],
 [type=reset],
-[type=submit] {
-  -webkit-appearance: button;
-}
+[type=submit] 
+
+
 button:not(:disabled),
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
@@ -428,8 +429,7 @@ legend + * {
 }
 
 [type=search] {
-  outline-offset: -2px;
-  -webkit-appearance: textfield;
+  outline-offset: -2px; 
 }
 
 
@@ -710,7 +710,7 @@ progress {
   width: 16.6666666667%;
 }
 
-.col-auto {
+.col-auto {  
   flex: 0 0 auto;
   width: auto;
 }
@@ -1600,7 +1600,7 @@ progress {
 
   .col-xl-8 {
     flex: 0 0 auto;
-    width: 66.66666667%;
+    width: 66.6667%;
   }
 
   .col-xl-9 {
@@ -2474,10 +2474,8 @@ textarea.form-control-lg {
   border: 1px solid rgba(0, 0, 0, 0.25);
   -webkit-appearance: none;
      -moz-appearance: none;
-          appearance: none;
-  -webkit-print-color-adjust: exact;
-          accent-color: exact;
-}
+          appearance: none; 
+ }
 .form-check-input[type=checkbox] {
   border-radius: 0.25em;
 }
@@ -3018,12 +3016,13 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #226db8;
+  background-color: #0c71c3;
+  border-color: #0c71c3;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #155d74;
-  border-color: #155d74;
+  background-color: #0e1d2a;
+  border-color: #0e1d2a;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
@@ -3040,9 +3039,9 @@ textarea.form-control-lg {
   box-shadow: 0 0 0 0.25rem rgba(63, 147, 173, 0.5);
 }
 .btn-primary:disabled, .btn-primary.disabled {
-  color: #fff;
-  background-color: #1D809F;
-  border-color: #1D809F;
+    color: #fff;
+    background-color: #0c71c3;
+    border-color: #0C71C3;
 }
 
 .btn-secondary {
@@ -3227,13 +3226,13 @@ textarea.form-control-lg {
 
 .btn-dark {
   color: #fff;
-  background-color: #212529;
-  border-color: #212529;
+  background-color: #0e1d2a;
+  border-color: #0e1d2a;
 }
 .btn-dark:hover {
   color: #fff;
-  background-color: #1c1f23;
-  border-color: #1a1e21;
+  background-color: #0c71c3;
+  border-color: #0c71c3;
 }
 .btn-check:focus + .btn-dark, .btn-dark:focus {
   color: #fff;
@@ -3261,8 +3260,8 @@ textarea.form-control-lg {
 }
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: #1D809F;
-  border-color: #1D809F;
+  background-color: #0c71c3;
+  border-color: #0c71c3;
 }
 .btn-check:focus + .btn-outline-primary, .btn-outline-primary:focus {
   box-shadow: 0 0 0 0.25rem rgba(29, 128, 159, 0.5);
@@ -7343,13 +7342,13 @@ textarea.form-control-lg {
 }
 
 .mb-0 {
-  margin-bottom: 0 !important;
+  margin-bottom: 0 !important;  
 }
 
 .mb-1 {
-  color: #fff;
-  text-shadow: 2px 2px 2px rgba(140,140,140,0.53);
-  margin-bottom: 0.25rem !important;
+    color: aliceblue; 
+    text-shadow: 2px 2px 6px #383838;
+    margin-bottom: 0.25rem !important;
 }
 
 .mb-2 {
@@ -7365,10 +7364,8 @@ textarea.form-control-lg {
 }
 
 .mb-5 {
-  color: #000;
   margin-bottom: 3rem !important;
 }
-
 
 .mb-auto {
   margin-bottom: auto !important;
@@ -7476,7 +7473,7 @@ textarea.form-control-lg {
   padding-bottom: 1rem !important;
 }
 
-.py-4 {
+.py-4 {  
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important;
 }
@@ -7798,12 +7795,12 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: #226db8 !important;
+  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-secondary {
   --bs-bg-opacity: 1;
-  background-color: #226db8 !important;
+  background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-success {
@@ -11284,6 +11281,7 @@ html {
 }
 
 .content-section {
+  
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
 }
@@ -11330,7 +11328,7 @@ html {
   height: 100%;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: #226db8;
+  background: #0c71c3;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -11412,7 +11410,7 @@ html {
 
 .callout {
   padding: 15rem 0;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-callout.jpg");
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, ) 100%);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11435,12 +11433,12 @@ footer.footer .social-link {
   width: 4rem;
   line-height: 4.3rem;
   font-size: 1.5rem;
-  background-color: #226db8;
+  background-color: #0C71C3;
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 footer.footer .social-link:hover {
-  background-color: #155d74;
+  background-color: #0e1d2a;
   text-decoration: none;
 }
 
@@ -11545,52 +11543,83 @@ footer.footer .social-link:hover {
             clip-path: inset(2rem);
   }
   .portfolio-item:hover .caption {
-    background-color: rgba(29, 128, 159, 0.9);
+    background-color: rgba(12,113,195,0.80);
     -webkit-clip-path: inset(2rem);
-            clip-path: inset(2rem);
+    clip-path: inset(2rem);
   }
 }
 
 .service-icon {
   background-color: #fff;
-  color: #1D809F;
+  color: #0C71C3;
   height: 7rem;
   width: 7rem;
   display: block;
   line-height: 7.5rem;
   font-size: 2.25rem;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
-}.em_text {
-    color: #fff;
-    text-shadow: -2px 2px 4px #262626;
-}
-.mb-5text {
-    color: #fff;
-    text-shadow: -2px 2px 4px #262626;
-}
-.text_copy {
-    color: black;
-}
-.le_text {
-    color: #FFFFFF;
-    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 2rem;
-}
-
-
-.header {
-  color: #36A0FF;
-  font-size: 27px;
-  padding: 10px;
-}
-
-.bigicon {
-  font-size: 35px;
-  color: #36A0FF;
-}.text-right {
-    width: 0px;
 }
 
 
 
+.signup-section {
+  padding: 10rem 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.signup-section .form-signup input {
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  height: auto;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 0;
+}
+
+.contact-section {
+  padding-top: 5rem;
+}
+.contact-section .card {
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 0.25rem solid #0C71C3;
+}
+.contact-section .card h4, .contact-section .card .h4 {
+  font-size: 0.8rem;
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+.contact-section .card hr {
+  border-color: #64a19d;
+  border-width: 0.25rem;
+  width: 3rem;
+}
+.contact-section .social {
+  margin-top: 5rem;
+}
+.contact-section .social a {
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  line-height: 3rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+.contact-section .social a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+.contact-section .social a:active {
+  color: #fff;
+}
+
+.footer {
+  padding: 5rem 0;
+}

@@ -1,0 +1,27 @@
+
+  form {
+    background-color: $secondary-color;
+    @include border-radius(10px);
+    padding: 20px;
+  
+    input, textarea {
+      @extend .form-control;
+      margin-bottom: 10px;
+    }
+  
+    input[type="submit"] {
+      background-color: $primary-color;
+      color: #fff;
+      @include border-radius(5px);
+      padding: 10px 20px;
+    }
+  }
+  
+  .form-control {
+    background-color: #fff;
+    border: 1px solid $primary-color;
+    @include border-radius(5px);
+    padding: 10px;
+    width: 100%;
+  }  
+  
